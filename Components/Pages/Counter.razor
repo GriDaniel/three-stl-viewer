@@ -1,0 +1,52 @@
+﻿@page "/counter"
+@rendermode InteractiveServer
+@inject IJSRuntime JSRuntime
+
+<PageTitle>Counter</PageTitle>
+<div id="three-container" style="width:100%; max-width: 85vw; height:600px; display:flex; flex-direction: column; border: 1px solid #ccc;"></div>
+@code {
+    private bool _isFirstRender = true;
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        // Ensure this runs only once after the initial render
+        if (firstRender)
+        {
+            _isFirstRender = false; // Mark that first render has passed
+
+            // Define configuration for the viewer
+            
+
+            // Call the JavaScript function
+            // Note: "initThreeJsViewer" must be globally accessible on the window object
+            await JSRuntime.InvokeVoidAsync("initializeThreeSTLViewer");
+        }
+    }
+
+    // Implement IAsyncDisposable to clean up the viewer when the component is removed
+    // This is crucial to prevent memory leaks
+    public async ValueTask DisposeAsync()
+    {
+        // Check if the cleanup function exists on the window object
+        // and if this component was the one that initialized it.
+        // A more robust way might involve a flag set after successful initialization.
+        // For simplicity, we check if it's not the first render anymore, implying init was called.
+        if (!_isFirstRender)
+        {
+            // It's good practice to check if the function exists before calling
+            // This could be done with a JS call that returns a boolean, or just try-catch
+            try
+            {
+                await JSRuntime.InvokeVoidAsync("cleanupThreeJsViewer");
+            }
+            catch (JSException ex)
+            {
+                // Log or handle the case where cleanupThreeJsViewer might not exist
+                // or an error occurs during cleanup.
+                Console.WriteLine($"Error during Three.js viewer cleanup: {ex.Message}");
+            }
+        }
+    }
+    }
+    
+

@@ -1,0 +1,1876 @@
+{
+  "Version": 1,
+  "Hash": "OBXyfbOL8hbicYCCFvf5aJwqcL4t6L6Kfh7xEvwSqH4=",
+  "Source": "BlazorApp4",
+  "BasePath": "_content/BlazorApp4",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "BlazorApp4\\wwwroot",
+      "Source": "BlazorApp4",
+      "ContentRoot": "C:\\Users\\danis\\source\\repos\\BlazorApp4\\wwwroot\\",
+      "BasePath": "_content/BlazorApp4",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\danis\\source\\repos\\BlazorApp4\\obj\\Debug\\net8.0\\scopedcss\\bundle\\BlazorApp4.styles.css",
+      "SourceId": "BlazorApp4",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\danis\\source\\repos\\BlazorApp4\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+      "BasePath": "_content/BlazorApp4",
+      "RelativePath": "BlazorApp4#[.{fingerprint}]?.styles.css",
+      "AssetKind": "All",
+      "AssetMode": "CurrentProject",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ApplicationBundle",
+      "Fingerprint": "e1kutf2ne9",
+      "Integrity": "DobLi6r4xcqiHgyZ8sIS6W/ox7Cq6bMgclanO6+Vy48=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\danis\\source\\repos\\BlazorApp4\\obj\\Debug\\net8.0\\scopedcss\\bundle\\BlazorApp4.styles.css"
+    },
+    {
+      "Identity": "C:\\Users\\danis\\source\\repos\\BlazorApp4\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\BlazorApp4.bundle.scp.css",
+      "SourceId": "BlazorApp4",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\danis\\source\\repos\\BlazorApp4\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
+      "BasePath": "_content/BlazorApp4",
+      "RelativePath": "BlazorApp4#[.{fingerprint}]!.bundle.scp.css",
+      "AssetKind": "All",
+      "AssetMode": "Reference",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ProjectBundle",
+      "Fingerprint": "e1kutf2ne9",
+      "Integrity": "DobLi6r4xcqiHgyZ8sIS6W/ox7Cq6bMgclanO6+Vy48=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\danis\\source\\repos\\BlazorApp4\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\BlazorApp4.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\danis\\source\\repos\\BlazorApp4\\wwwroot\\app.css",
+      "SourceId": "BlazorApp4",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\danis\\source\\repos\\BlazorApp4\\wwwroot\\",
+      "BasePath": "_content/BlazorApp4",
+      "RelativePath": "app#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "1hsrk6xph1",
+      "Integrity": "G3sxuJA6ZrKPflFRcZtK3y/qZK97sNeF5+ZAPpNac+Y=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\app.css"
+    },
+    {
+      "Identity": "C:\\Users\\danis\\source\\repos\\BlazorApp4\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "SourceId": "BlazorApp4",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\danis\\source\\repos\\BlazorApp4\\wwwroot\\",
+      "BasePath": "_content/BlazorApp4",
+      "RelativePath": "bootstrap/bootstrap.min#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "bpk8xqwxhs",
+      "Integrity": "z8OR40MowJ8GgK6P89Y+hiJK5+cclzFHzLhFQLL92bg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Identity": "C:\\Users\\danis\\source\\repos\\BlazorApp4\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "SourceId": "BlazorApp4",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\danis\\source\\repos\\BlazorApp4\\wwwroot\\",
+      "BasePath": "_content/BlazorApp4",
+      "RelativePath": "bootstrap/bootstrap.min.css#[.{fingerprint}]?.map",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "8inm30yfxf",
+      "Integrity": "gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Identity": "C:\\Users\\danis\\source\\repos\\BlazorApp4\\wwwroot\\favicon.png",
+      "SourceId": "BlazorApp4",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\danis\\source\\repos\\BlazorApp4\\wwwroot\\",
+      "BasePath": "_content/BlazorApp4",
+      "RelativePath": "favicon#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ifv42okdf2",
+      "Integrity": "4mWsDy3aHl36ZbGt8zByK7Pvd4kRUoNgTYzRnwmPHwg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\favicon.png"
+    },
+    {
+      "Identity": "C:\\Users\\danis\\source\\repos\\BlazorApp4\\wwwroot\\js\\three-stl-viewer\\assets\\test.stl",
+      "SourceId": "BlazorApp4",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\danis\\source\\repos\\BlazorApp4\\wwwroot\\",
+      "BasePath": "_content/BlazorApp4",
+      "RelativePath": "js/three-stl-viewer/assets/test#[.{fingerprint}]?.stl",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "2pvahs2okh",
+      "Integrity": "9n/BG8TWpbxWgBK9EqwC2Hi+SS/yx2yxON4dCRae7M4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\three-stl-viewer\\assets\\test.stl"
+    },
+    {
+      "Identity": "C:\\Users\\danis\\source\\repos\\BlazorApp4\\wwwroot\\js\\three-stl-viewer\\core\\model-handler.js",
+      "SourceId": "BlazorApp4",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\danis\\source\\repos\\BlazorApp4\\wwwroot\\",
+      "BasePath": "_content/BlazorApp4",
+      "RelativePath": "js/three-stl-viewer/core/model-handler#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "2cqvy6tfic",
+      "Integrity": "EmHq6Euq0w9yZMNY7m4nWOpKDgV0nRmSS6rITY62Va0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\three-stl-viewer\\core\\model-handler.js"
+    },
+    {
+      "Identity": "C:\\Users\\danis\\source\\repos\\BlazorApp4\\wwwroot\\js\\three-stl-viewer\\core\\three-environment.js",
+      "SourceId": "BlazorApp4",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\danis\\source\\repos\\BlazorApp4\\wwwroot\\",
+      "BasePath": "_content/BlazorApp4",
+      "RelativePath": "js/three-stl-viewer/core/three-environment#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ozh1kh8tsq",
+      "Integrity": "rLZ/Bb+gHRL+VNlK8lTkdALvDnvIKpMWQWtvZH3RqHc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\three-stl-viewer\\core\\three-environment.js"
+    },
+    {
+      "Identity": "C:\\Users\\danis\\source\\repos\\BlazorApp4\\wwwroot\\js\\three-stl-viewer\\features\\bounding-box.js",
+      "SourceId": "BlazorApp4",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\danis\\source\\repos\\BlazorApp4\\wwwroot\\",
+      "BasePath": "_content/BlazorApp4",
+      "RelativePath": "js/three-stl-viewer/features/bounding-box#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "l98o3yxfku",
+      "Integrity": "J0U10NRaKoTd0XXXKVi/TAniJwadsMhwzWHSTrwCE0I=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\three-stl-viewer\\features\\bounding-box.js"
+    },
+    {
+      "Identity": "C:\\Users\\danis\\source\\repos\\BlazorApp4\\wwwroot\\js\\three-stl-viewer\\features\\resize-handler.js",
+      "SourceId": "BlazorApp4",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\danis\\source\\repos\\BlazorApp4\\wwwroot\\",
+      "BasePath": "_content/BlazorApp4",
+      "RelativePath": "js/three-stl-viewer/features/resize-handler#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "x29vy2btwp",
+      "Integrity": "udnpzAAi/0c9/6j+eG6JsLACiMo7VLpAl6cgOXL/3qs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\three-stl-viewer\\features\\resize-handler.js"
+    },
+    {
+      "Identity": "C:\\Users\\danis\\source\\repos\\BlazorApp4\\wwwroot\\js\\three-stl-viewer\\main.js",
+      "SourceId": "BlazorApp4",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\danis\\source\\repos\\BlazorApp4\\wwwroot\\",
+      "BasePath": "_content/BlazorApp4",
+      "RelativePath": "js/three-stl-viewer/main#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "8444fdj71b",
+      "Integrity": "2KDML4qxfWUNEmgxBrCT2VpUUsbap5MW+rae3naWEzs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\three-stl-viewer\\main.js"
+    },
+    {
+      "Identity": "C:\\Users\\danis\\source\\repos\\BlazorApp4\\wwwroot\\js\\three-stl-viewer\\three\\three_bundle.js",
+      "SourceId": "BlazorApp4",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\danis\\source\\repos\\BlazorApp4\\wwwroot\\",
+      "BasePath": "_content/BlazorApp4",
+      "RelativePath": "js/three-stl-viewer/three/three_bundle#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "vd1x1r7os5",
+      "Integrity": "Q+IPsq+4ziNJ2cHuzXojq4dVJTPXkcyul3M3j7ec4iQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\three-stl-viewer\\three\\three_bundle.js"
+    },
+    {
+      "Identity": "C:\\Users\\danis\\source\\repos\\BlazorApp4\\wwwroot\\js\\three-stl-viewer\\toolbar\\icons.js",
+      "SourceId": "BlazorApp4",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\danis\\source\\repos\\BlazorApp4\\wwwroot\\",
+      "BasePath": "_content/BlazorApp4",
+      "RelativePath": "js/three-stl-viewer/toolbar/icons#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "lh68g26qj7",
+      "Integrity": "J/WeOtrOyinNyk5vITxCIqxqRxzgtVlKLl9CXm1DexQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\three-stl-viewer\\toolbar\\icons.js"
+    },
+    {
+      "Identity": "C:\\Users\\danis\\source\\repos\\BlazorApp4\\wwwroot\\js\\three-stl-viewer\\toolbar\\popups.js",
+      "SourceId": "BlazorApp4",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\danis\\source\\repos\\BlazorApp4\\wwwroot\\",
+      "BasePath": "_content/BlazorApp4",
+      "RelativePath": "js/three-stl-viewer/toolbar/popups#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ryu01uvv0t",
+      "Integrity": "PdqFk0+IY8m7IWYAZcmDYs9lmOcdurP+7g6uQ93tOVY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\three-stl-viewer\\toolbar\\popups.js"
+    },
+    {
+      "Identity": "C:\\Users\\danis\\source\\repos\\BlazorApp4\\wwwroot\\js\\three-stl-viewer\\toolbar\\toolbar-builder.js",
+      "SourceId": "BlazorApp4",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\danis\\source\\repos\\BlazorApp4\\wwwroot\\",
+      "BasePath": "_content/BlazorApp4",
+      "RelativePath": "js/three-stl-viewer/toolbar/toolbar-builder#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "agvb9agew2",
+      "Integrity": "+gRaYLHVlrgxWRHqyuc1zdfA9nf9258bx4qMevaSBV8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\three-stl-viewer\\toolbar\\toolbar-builder.js"
+    },
+    {
+      "Identity": "C:\\Users\\danis\\source\\repos\\BlazorApp4\\wwwroot\\js\\three-stl-viewer\\toolbar\\toolbar-class.js",
+      "SourceId": "BlazorApp4",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\danis\\source\\repos\\BlazorApp4\\wwwroot\\",
+      "BasePath": "_content/BlazorApp4",
+      "RelativePath": "js/three-stl-viewer/toolbar/toolbar-class#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "pdpmb6kj1u",
+      "Integrity": "/ez+AfwZFwIjN7iAfbXMqXewu+OAXHu5ztbaZlgm60Y=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\three-stl-viewer\\toolbar\\toolbar-class.js"
+    },
+    {
+      "Identity": "C:\\Users\\danis\\source\\repos\\BlazorApp4\\wwwroot\\js\\three-stl-viewer\\utils\\constants.js",
+      "SourceId": "BlazorApp4",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\danis\\source\\repos\\BlazorApp4\\wwwroot\\",
+      "BasePath": "_content/BlazorApp4",
+      "RelativePath": "js/three-stl-viewer/utils/constants#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "t6og62bay0",
+      "Integrity": "dRxx9UG4t885tByMgD4LROyqgimqebp8is71PmGMkm4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\three-stl-viewer\\utils\\constants.js"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "app.1hsrk6xph1.css",
+      "AssetFile": "C:\\Users\\danis\\source\\repos\\BlazorApp4\\wwwroot\\app.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7035"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"G3sxuJA6ZrKPflFRcZtK3y/qZK97sNeF5+ZAPpNac+Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 13 May 2025 07:49:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "1hsrk6xph1"
+        },
+        {
+          "Name": "label",
+          "Value": "app.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-G3sxuJA6ZrKPflFRcZtK3y/qZK97sNeF5+ZAPpNac+Y="
+        }
+      ]
+    },
+    {
+      "Route": "app.css",
+      "AssetFile": "C:\\Users\\danis\\source\\repos\\BlazorApp4\\wwwroot\\app.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7035"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"G3sxuJA6ZrKPflFRcZtK3y/qZK97sNeF5+ZAPpNac+Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 13 May 2025 07:49:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-G3sxuJA6ZrKPflFRcZtK3y/qZK97sNeF5+ZAPpNac+Y="
+        }
+      ]
+    },
+    {
+      "Route": "BlazorApp4.bundle.scp.css",
+      "AssetFile": "C:\\Users\\danis\\source\\repos\\BlazorApp4\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\BlazorApp4.bundle.scp.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5903"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"DobLi6r4xcqiHgyZ8sIS6W/ox7Cq6bMgclanO6+Vy48=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 13 May 2025 07:32:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-DobLi6r4xcqiHgyZ8sIS6W/ox7Cq6bMgclanO6+Vy48="
+        }
+      ]
+    },
+    {
+      "Route": "BlazorApp4.e1kutf2ne9.bundle.scp.css",
+      "AssetFile": "C:\\Users\\danis\\source\\repos\\BlazorApp4\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\BlazorApp4.bundle.scp.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5903"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"DobLi6r4xcqiHgyZ8sIS6W/ox7Cq6bMgclanO6+Vy48=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 13 May 2025 07:32:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "e1kutf2ne9"
+        },
+        {
+          "Name": "label",
+          "Value": "BlazorApp4.bundle.scp.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-DobLi6r4xcqiHgyZ8sIS6W/ox7Cq6bMgclanO6+Vy48="
+        }
+      ]
+    },
+    {
+      "Route": "BlazorApp4.e1kutf2ne9.styles.css",
+      "AssetFile": "C:\\Users\\danis\\source\\repos\\BlazorApp4\\obj\\Debug\\net8.0\\scopedcss\\bundle\\BlazorApp4.styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5903"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"DobLi6r4xcqiHgyZ8sIS6W/ox7Cq6bMgclanO6+Vy48=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 13 May 2025 07:32:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "e1kutf2ne9"
+        },
+        {
+          "Name": "label",
+          "Value": "BlazorApp4.styles.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-DobLi6r4xcqiHgyZ8sIS6W/ox7Cq6bMgclanO6+Vy48="
+        }
+      ]
+    },
+    {
+      "Route": "BlazorApp4.styles.css",
+      "AssetFile": "C:\\Users\\danis\\source\\repos\\BlazorApp4\\obj\\Debug\\net8.0\\scopedcss\\bundle\\BlazorApp4.styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5903"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"DobLi6r4xcqiHgyZ8sIS6W/ox7Cq6bMgclanO6+Vy48=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 13 May 2025 07:32:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-DobLi6r4xcqiHgyZ8sIS6W/ox7Cq6bMgclanO6+Vy48="
+        }
+      ]
+    },
+    {
+      "Route": "bootstrap/bootstrap.min.bpk8xqwxhs.css",
+      "AssetFile": "C:\\Users\\danis\\source\\repos\\BlazorApp4\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "162720"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"z8OR40MowJ8GgK6P89Y+hiJK5+cclzFHzLhFQLL92bg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 13 May 2025 07:20:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "bpk8xqwxhs"
+        },
+        {
+          "Name": "label",
+          "Value": "bootstrap/bootstrap.min.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-z8OR40MowJ8GgK6P89Y+hiJK5+cclzFHzLhFQLL92bg="
+        }
+      ]
+    },
+    {
+      "Route": "bootstrap/bootstrap.min.css",
+      "AssetFile": "C:\\Users\\danis\\source\\repos\\BlazorApp4\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "162720"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"z8OR40MowJ8GgK6P89Y+hiJK5+cclzFHzLhFQLL92bg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 13 May 2025 07:20:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-z8OR40MowJ8GgK6P89Y+hiJK5+cclzFHzLhFQLL92bg="
+        }
+      ]
+    },
+    {
+      "Route": "bootstrap/bootstrap.min.css.8inm30yfxf.map",
+      "AssetFile": "C:\\Users\\danis\\source\\repos\\BlazorApp4\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "449111"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 13 May 2025 07:20:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8inm30yfxf"
+        },
+        {
+          "Name": "label",
+          "Value": "bootstrap/bootstrap.min.css.map"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ="
+        }
+      ]
+    },
+    {
+      "Route": "bootstrap/bootstrap.min.css.map",
+      "AssetFile": "C:\\Users\\danis\\source\\repos\\BlazorApp4\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "449111"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 13 May 2025 07:20:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ="
+        }
+      ]
+    },
+    {
+      "Route": "favicon.ifv42okdf2.png",
+      "AssetFile": "C:\\Users\\danis\\source\\repos\\BlazorApp4\\wwwroot\\favicon.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1148"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4mWsDy3aHl36ZbGt8zByK7Pvd4kRUoNgTYzRnwmPHwg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 13 May 2025 07:20:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ifv42okdf2"
+        },
+        {
+          "Name": "label",
+          "Value": "favicon.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-4mWsDy3aHl36ZbGt8zByK7Pvd4kRUoNgTYzRnwmPHwg="
+        }
+      ]
+    },
+    {
+      "Route": "favicon.png",
+      "AssetFile": "C:\\Users\\danis\\source\\repos\\BlazorApp4\\wwwroot\\favicon.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1148"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4mWsDy3aHl36ZbGt8zByK7Pvd4kRUoNgTYzRnwmPHwg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 13 May 2025 07:20:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-4mWsDy3aHl36ZbGt8zByK7Pvd4kRUoNgTYzRnwmPHwg="
+        }
+      ]
+    },
+    {
+      "Route": "js/three-stl-viewer/assets/test.2pvahs2okh.stl",
+      "AssetFile": "C:\\Users\\danis\\source\\repos\\BlazorApp4\\wwwroot\\js\\three-stl-viewer\\assets\\test.stl",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4192784"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/vnd.ms-pki.stl"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9n/BG8TWpbxWgBK9EqwC2Hi+SS/yx2yxON4dCRae7M4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 11 May 2025 17:35:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "2pvahs2okh"
+        },
+        {
+          "Name": "label",
+          "Value": "js/three-stl-viewer/assets/test.stl"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-9n/BG8TWpbxWgBK9EqwC2Hi+SS/yx2yxON4dCRae7M4="
+        }
+      ]
+    },
+    {
+      "Route": "js/three-stl-viewer/assets/test.stl",
+      "AssetFile": "C:\\Users\\danis\\source\\repos\\BlazorApp4\\wwwroot\\js\\three-stl-viewer\\assets\\test.stl",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4192784"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/vnd.ms-pki.stl"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9n/BG8TWpbxWgBK9EqwC2Hi+SS/yx2yxON4dCRae7M4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 11 May 2025 17:35:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-9n/BG8TWpbxWgBK9EqwC2Hi+SS/yx2yxON4dCRae7M4="
+        }
+      ]
+    },
+    {
+      "Route": "js/three-stl-viewer/core/model-handler.2cqvy6tfic.js",
+      "AssetFile": "C:\\Users\\danis\\source\\repos\\BlazorApp4\\wwwroot\\js\\three-stl-viewer\\core\\model-handler.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3605"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"EmHq6Euq0w9yZMNY7m4nWOpKDgV0nRmSS6rITY62Va0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 13 May 2025 16:07:34 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "2cqvy6tfic"
+        },
+        {
+          "Name": "label",
+          "Value": "js/three-stl-viewer/core/model-handler.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-EmHq6Euq0w9yZMNY7m4nWOpKDgV0nRmSS6rITY62Va0="
+        }
+      ]
+    },
+    {
+      "Route": "js/three-stl-viewer/core/model-handler.js",
+      "AssetFile": "C:\\Users\\danis\\source\\repos\\BlazorApp4\\wwwroot\\js\\three-stl-viewer\\core\\model-handler.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3605"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"EmHq6Euq0w9yZMNY7m4nWOpKDgV0nRmSS6rITY62Va0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 13 May 2025 16:07:34 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-EmHq6Euq0w9yZMNY7m4nWOpKDgV0nRmSS6rITY62Va0="
+        }
+      ]
+    },
+    {
+      "Route": "js/three-stl-viewer/core/three-environment.js",
+      "AssetFile": "C:\\Users\\danis\\source\\repos\\BlazorApp4\\wwwroot\\js\\three-stl-viewer\\core\\three-environment.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3397"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rLZ/Bb+gHRL+VNlK8lTkdALvDnvIKpMWQWtvZH3RqHc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 13 May 2025 16:07:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-rLZ/Bb+gHRL+VNlK8lTkdALvDnvIKpMWQWtvZH3RqHc="
+        }
+      ]
+    },
+    {
+      "Route": "js/three-stl-viewer/core/three-environment.ozh1kh8tsq.js",
+      "AssetFile": "C:\\Users\\danis\\source\\repos\\BlazorApp4\\wwwroot\\js\\three-stl-viewer\\core\\three-environment.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3397"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rLZ/Bb+gHRL+VNlK8lTkdALvDnvIKpMWQWtvZH3RqHc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 13 May 2025 16:07:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ozh1kh8tsq"
+        },
+        {
+          "Name": "label",
+          "Value": "js/three-stl-viewer/core/three-environment.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-rLZ/Bb+gHRL+VNlK8lTkdALvDnvIKpMWQWtvZH3RqHc="
+        }
+      ]
+    },
+    {
+      "Route": "js/three-stl-viewer/features/bounding-box.js",
+      "AssetFile": "C:\\Users\\danis\\source\\repos\\BlazorApp4\\wwwroot\\js\\three-stl-viewer\\features\\bounding-box.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1417"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"J0U10NRaKoTd0XXXKVi/TAniJwadsMhwzWHSTrwCE0I=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 13 May 2025 16:07:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-J0U10NRaKoTd0XXXKVi/TAniJwadsMhwzWHSTrwCE0I="
+        }
+      ]
+    },
+    {
+      "Route": "js/three-stl-viewer/features/bounding-box.l98o3yxfku.js",
+      "AssetFile": "C:\\Users\\danis\\source\\repos\\BlazorApp4\\wwwroot\\js\\three-stl-viewer\\features\\bounding-box.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1417"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"J0U10NRaKoTd0XXXKVi/TAniJwadsMhwzWHSTrwCE0I=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 13 May 2025 16:07:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "l98o3yxfku"
+        },
+        {
+          "Name": "label",
+          "Value": "js/three-stl-viewer/features/bounding-box.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-J0U10NRaKoTd0XXXKVi/TAniJwadsMhwzWHSTrwCE0I="
+        }
+      ]
+    },
+    {
+      "Route": "js/three-stl-viewer/features/resize-handler.js",
+      "AssetFile": "C:\\Users\\danis\\source\\repos\\BlazorApp4\\wwwroot\\js\\three-stl-viewer\\features\\resize-handler.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2211"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"udnpzAAi/0c9/6j+eG6JsLACiMo7VLpAl6cgOXL/3qs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 13 May 2025 16:07:19 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-udnpzAAi/0c9/6j+eG6JsLACiMo7VLpAl6cgOXL/3qs="
+        }
+      ]
+    },
+    {
+      "Route": "js/three-stl-viewer/features/resize-handler.x29vy2btwp.js",
+      "AssetFile": "C:\\Users\\danis\\source\\repos\\BlazorApp4\\wwwroot\\js\\three-stl-viewer\\features\\resize-handler.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2211"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"udnpzAAi/0c9/6j+eG6JsLACiMo7VLpAl6cgOXL/3qs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 13 May 2025 16:07:19 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "x29vy2btwp"
+        },
+        {
+          "Name": "label",
+          "Value": "js/three-stl-viewer/features/resize-handler.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-udnpzAAi/0c9/6j+eG6JsLACiMo7VLpAl6cgOXL/3qs="
+        }
+      ]
+    },
+    {
+      "Route": "js/three-stl-viewer/main.8444fdj71b.js",
+      "AssetFile": "C:\\Users\\danis\\source\\repos\\BlazorApp4\\wwwroot\\js\\three-stl-viewer\\main.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2012"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2KDML4qxfWUNEmgxBrCT2VpUUsbap5MW+rae3naWEzs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 13 May 2025 16:10:25 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8444fdj71b"
+        },
+        {
+          "Name": "label",
+          "Value": "js/three-stl-viewer/main.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-2KDML4qxfWUNEmgxBrCT2VpUUsbap5MW+rae3naWEzs="
+        }
+      ]
+    },
+    {
+      "Route": "js/three-stl-viewer/main.js",
+      "AssetFile": "C:\\Users\\danis\\source\\repos\\BlazorApp4\\wwwroot\\js\\three-stl-viewer\\main.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2012"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2KDML4qxfWUNEmgxBrCT2VpUUsbap5MW+rae3naWEzs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 13 May 2025 16:10:25 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-2KDML4qxfWUNEmgxBrCT2VpUUsbap5MW+rae3naWEzs="
+        }
+      ]
+    },
+    {
+      "Route": "js/three-stl-viewer/three/three_bundle.js",
+      "AssetFile": "C:\\Users\\danis\\source\\repos\\BlazorApp4\\wwwroot\\js\\three-stl-viewer\\three\\three_bundle.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "736667"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Q+IPsq+4ziNJ2cHuzXojq4dVJTPXkcyul3M3j7ec4iQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 12 May 2025 01:01:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Q+IPsq+4ziNJ2cHuzXojq4dVJTPXkcyul3M3j7ec4iQ="
+        }
+      ]
+    },
+    {
+      "Route": "js/three-stl-viewer/three/three_bundle.vd1x1r7os5.js",
+      "AssetFile": "C:\\Users\\danis\\source\\repos\\BlazorApp4\\wwwroot\\js\\three-stl-viewer\\three\\three_bundle.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "736667"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Q+IPsq+4ziNJ2cHuzXojq4dVJTPXkcyul3M3j7ec4iQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 12 May 2025 01:01:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vd1x1r7os5"
+        },
+        {
+          "Name": "label",
+          "Value": "js/three-stl-viewer/three/three_bundle.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Q+IPsq+4ziNJ2cHuzXojq4dVJTPXkcyul3M3j7ec4iQ="
+        }
+      ]
+    },
+    {
+      "Route": "js/three-stl-viewer/toolbar/icons.js",
+      "AssetFile": "C:\\Users\\danis\\source\\repos\\BlazorApp4\\wwwroot\\js\\three-stl-viewer\\toolbar\\icons.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3521"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"J/WeOtrOyinNyk5vITxCIqxqRxzgtVlKLl9CXm1DexQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 13 May 2025 16:06:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-J/WeOtrOyinNyk5vITxCIqxqRxzgtVlKLl9CXm1DexQ="
+        }
+      ]
+    },
+    {
+      "Route": "js/three-stl-viewer/toolbar/icons.lh68g26qj7.js",
+      "AssetFile": "C:\\Users\\danis\\source\\repos\\BlazorApp4\\wwwroot\\js\\three-stl-viewer\\toolbar\\icons.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3521"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"J/WeOtrOyinNyk5vITxCIqxqRxzgtVlKLl9CXm1DexQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 13 May 2025 16:06:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "lh68g26qj7"
+        },
+        {
+          "Name": "label",
+          "Value": "js/three-stl-viewer/toolbar/icons.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-J/WeOtrOyinNyk5vITxCIqxqRxzgtVlKLl9CXm1DexQ="
+        }
+      ]
+    },
+    {
+      "Route": "js/three-stl-viewer/toolbar/popups.js",
+      "AssetFile": "C:\\Users\\danis\\source\\repos\\BlazorApp4\\wwwroot\\js\\three-stl-viewer\\toolbar\\popups.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3244"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"PdqFk0+IY8m7IWYAZcmDYs9lmOcdurP+7g6uQ93tOVY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 13 May 2025 16:06:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-PdqFk0+IY8m7IWYAZcmDYs9lmOcdurP+7g6uQ93tOVY="
+        }
+      ]
+    },
+    {
+      "Route": "js/three-stl-viewer/toolbar/popups.ryu01uvv0t.js",
+      "AssetFile": "C:\\Users\\danis\\source\\repos\\BlazorApp4\\wwwroot\\js\\three-stl-viewer\\toolbar\\popups.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3244"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"PdqFk0+IY8m7IWYAZcmDYs9lmOcdurP+7g6uQ93tOVY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 13 May 2025 16:06:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ryu01uvv0t"
+        },
+        {
+          "Name": "label",
+          "Value": "js/three-stl-viewer/toolbar/popups.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-PdqFk0+IY8m7IWYAZcmDYs9lmOcdurP+7g6uQ93tOVY="
+        }
+      ]
+    },
+    {
+      "Route": "js/three-stl-viewer/toolbar/toolbar-builder.agvb9agew2.js",
+      "AssetFile": "C:\\Users\\danis\\source\\repos\\BlazorApp4\\wwwroot\\js\\three-stl-viewer\\toolbar\\toolbar-builder.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4031"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+gRaYLHVlrgxWRHqyuc1zdfA9nf9258bx4qMevaSBV8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 13 May 2025 16:06:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "agvb9agew2"
+        },
+        {
+          "Name": "label",
+          "Value": "js/three-stl-viewer/toolbar/toolbar-builder.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-+gRaYLHVlrgxWRHqyuc1zdfA9nf9258bx4qMevaSBV8="
+        }
+      ]
+    },
+    {
+      "Route": "js/three-stl-viewer/toolbar/toolbar-builder.js",
+      "AssetFile": "C:\\Users\\danis\\source\\repos\\BlazorApp4\\wwwroot\\js\\three-stl-viewer\\toolbar\\toolbar-builder.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4031"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+gRaYLHVlrgxWRHqyuc1zdfA9nf9258bx4qMevaSBV8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 13 May 2025 16:06:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-+gRaYLHVlrgxWRHqyuc1zdfA9nf9258bx4qMevaSBV8="
+        }
+      ]
+    },
+    {
+      "Route": "js/three-stl-viewer/toolbar/toolbar-class.js",
+      "AssetFile": "C:\\Users\\danis\\source\\repos\\BlazorApp4\\wwwroot\\js\\three-stl-viewer\\toolbar\\toolbar-class.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5648"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/ez+AfwZFwIjN7iAfbXMqXewu+OAXHu5ztbaZlgm60Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 13 May 2025 16:06:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-/ez+AfwZFwIjN7iAfbXMqXewu+OAXHu5ztbaZlgm60Y="
+        }
+      ]
+    },
+    {
+      "Route": "js/three-stl-viewer/toolbar/toolbar-class.pdpmb6kj1u.js",
+      "AssetFile": "C:\\Users\\danis\\source\\repos\\BlazorApp4\\wwwroot\\js\\three-stl-viewer\\toolbar\\toolbar-class.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5648"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/ez+AfwZFwIjN7iAfbXMqXewu+OAXHu5ztbaZlgm60Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 13 May 2025 16:06:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "pdpmb6kj1u"
+        },
+        {
+          "Name": "label",
+          "Value": "js/three-stl-viewer/toolbar/toolbar-class.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-/ez+AfwZFwIjN7iAfbXMqXewu+OAXHu5ztbaZlgm60Y="
+        }
+      ]
+    },
+    {
+      "Route": "js/three-stl-viewer/utils/constants.js",
+      "AssetFile": "C:\\Users\\danis\\source\\repos\\BlazorApp4\\wwwroot\\js\\three-stl-viewer\\utils\\constants.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1692"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dRxx9UG4t885tByMgD4LROyqgimqebp8is71PmGMkm4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 13 May 2025 16:03:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-dRxx9UG4t885tByMgD4LROyqgimqebp8is71PmGMkm4="
+        }
+      ]
+    },
+    {
+      "Route": "js/three-stl-viewer/utils/constants.t6og62bay0.js",
+      "AssetFile": "C:\\Users\\danis\\source\\repos\\BlazorApp4\\wwwroot\\js\\three-stl-viewer\\utils\\constants.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1692"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dRxx9UG4t885tByMgD4LROyqgimqebp8is71PmGMkm4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 13 May 2025 16:03:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "t6og62bay0"
+        },
+        {
+          "Name": "label",
+          "Value": "js/three-stl-viewer/utils/constants.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-dRxx9UG4t885tByMgD4LROyqgimqebp8is71PmGMkm4="
+        }
+      ]
+    }
+  ]
+}

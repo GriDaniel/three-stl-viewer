@@ -1,0 +1,16 @@
+wwwroot\app.css
+wwwroot\bootstrap\bootstrap.min.css
+wwwroot\bootstrap\bootstrap.min.css.map
+wwwroot\favicon.png
+wwwroot\js\three-stl-viewer\assets\test.stl
+wwwroot\js\three-stl-viewer\core\model-handler.js
+wwwroot\js\three-stl-viewer\core\three-environment.js
+wwwroot\js\three-stl-viewer\features\bounding-box.js
+wwwroot\js\three-stl-viewer\features\resize-handler.js
+wwwroot\js\three-stl-viewer\main.js
+wwwroot\js\three-stl-viewer\three\three_bundle.js
+wwwroot\js\three-stl-viewer\toolbar\icons.js
+wwwroot\js\three-stl-viewer\toolbar\popups.js
+wwwroot\js\three-stl-viewer\toolbar\toolbar-builder.js
+wwwroot\js\three-stl-viewer\toolbar\toolbar-class.js
+wwwroot\js\three-stl-viewer\utils\constants.js
