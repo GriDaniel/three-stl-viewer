@@ -1,116 +1,85 @@
 ﻿import { Toolbar } from './toolbar-class.js';
 import * as Icons from './icons.js';
-import { createColorPickerPopup, togglePopup, cleanupPopups } from './popups.js';
-import { borderColors, backgroundColors } from '../utils/constants.js';
-import { toggleBoundingBox, changeBoundingBoxColor } from '../features/bounding-box.js';
-import { toggleResizeMode } from '../features/resize-handler.js';
-import { resetModelPosition, resetCameraView } from '../core/model-handler.js';
+import { togglePopup } from './popups.js';
+import {
+    borderColors, backgroundColors, faceQuaternions,
+    BTN_ID_VIEW_FRONT, BTN_ID_VIEW_BACK, BTN_ID_VIEW_TOP, BTN_ID_VIEW_BOTTOM, BTN_ID_VIEW_LEFT, BTN_ID_VIEW_RIGHT,
+    BTN_ID_RESET_SIZE, BTN_ID_RESET_POS,
+    BTN_ID_TOGGLE_BORDER, BTN_ID_BORDER_COLOR,
+    BTN_ID_BG_COLOR,
+    BTN_ID_RESIZE_MODE
+} from '../utils/constants.js';
+import { toggleBBox, setBBoxClr } from '../features/bounding-box.js';
+import { toggleResize } from '../features/resize-handler.js';
+import { resetMdlPos, resetCamView } from '../core/model-handler.js';
+export function initToolbar(cont, env) {
+    const tb = new Toolbar(cont);
 
-export function initToolbar(container, environment, faceQuaternions) {
-    const toolbar = new Toolbar(container);
+    addOrientationBtns(tb, env);
+    addResetBtns(tb, env);
+    addBorderBtns(tb, env);
+    addBackgroundBtns(tb, env);
+    addResizeBtns(tb);
+    return tb;
+}
+function addOrientationBtns(tb, env) {
+    const { cameraControls: camCtrl } = env;
+    const sectLbl = 'View Orientations';
 
-    addViewOrientationButtons(toolbar, environment, faceQuaternions);
-    addResetButtons(toolbar, environment);
-    addBorderButtons(toolbar, environment);
-    addBackgroundButtons(toolbar, environment);
-    addResizeButtons(toolbar);
+    tb.addBtn(BTN_ID_VIEW_FRONT, 'Front', Icons.frontIcon, () => camCtrl.flyTo(faceQuaternions.FRONT), {}, sectLbl);
+    tb.addBtn(BTN_ID_VIEW_BACK, 'Back', Icons.backIcon, () => camCtrl.flyTo(faceQuaternions.BACK), {}, sectLbl);
+    tb.addBtn(BTN_ID_VIEW_TOP, 'Top', Icons.topIcon, () => camCtrl.flyTo(faceQuaternions.TOP), {}, sectLbl);
+    tb.addBtn(BTN_ID_VIEW_BOTTOM, 'Bottom', Icons.bottomIcon, () => camCtrl.flyTo(faceQuaternions.BOTTOM), {}, sectLbl);
+    tb.addBtn(BTN_ID_VIEW_LEFT, 'Left', Icons.leftIcon, () => camCtrl.flyTo(faceQuaternions.LEFT), {}, sectLbl);
+    tb.addBtn(BTN_ID_VIEW_RIGHT, 'Right', Icons.rightIcon, () => camCtrl.flyTo(faceQuaternions.RIGHT), {}, sectLbl);
 }
 
-function addViewOrientationButtons(toolbar, environment, faceQuaternions) {
-    const { cameraControls } = environment;
-
-    toolbar.addButton('Front', Icons.frontIcon, () => {
-        cameraControls.flyTo(faceQuaternions.FRONT);
-    }, {}, 'View Orientations');
-
-    toolbar.addButton('Back', Icons.backIcon, () => {
-        cameraControls.flyTo(faceQuaternions.BACK);
-    }, {}, 'View Orientations');
-
-    toolbar.addButton('Top', Icons.topIcon, () => {
-        cameraControls.flyTo(faceQuaternions.TOP);
-    }, {}, 'View Orientations');
-
-    toolbar.addButton('Bottom', Icons.bottomIcon, () => {
-        cameraControls.flyTo(faceQuaternions.BOTTOM);
-    }, {}, 'View Orientations');
-
-    toolbar.addButton('Left', Icons.leftIcon, () => {
-        cameraControls.flyTo(faceQuaternions.LEFT);
-    }, {}, 'View Orientations');
-
-    toolbar.addButton('Right', Icons.rightIcon, () => {
-        cameraControls.flyTo(faceQuaternions.RIGHT);
-    }, {}, 'View Orientations');
-
-    toolbar.addSeparator('View Orientations');
+function addResetBtns(tb, env) {
+    const sectLbl = 'Reset';
+    tb.addBtn(BTN_ID_RESET_SIZE, 'Reset Size', Icons.resetSizeIcon, () => resetCamView(env), {}, sectLbl);
+    tb.addBtn(BTN_ID_RESET_POS, 'Reset Position', Icons.resetPositionIcon, () => resetMdlPos(env), {}, sectLbl);
 }
 
-function addResetButtons(toolbar, environment) {
-    toolbar.addButton('Reset Size', Icons.resetSizeIcon, () => {
-        resetCameraView(environment);
-    }, {}, 'Reset');
+function addBorderBtns(tb, env) {
+    const { scene, modelMesh } = env;
+    const sectLbl = 'Border';
+    let borderToggleBtnEl;
 
-    toolbar.addButton('Reset Position', Icons.resetPositionIcon, () => {
-        resetModelPosition(environment);
-    }, {}, 'Reset');
-
-    toolbar.addSeparator('Reset');
-}
-
-function addBorderButtons(toolbar, environment) {
-    const { scene } = environment;
-    const { modelMesh } = environment;
-
-    let borderToggleButton = toolbar.addButton(
-        'Toggle Border',
-        Icons.createBorderToggleIcon(false),
+    borderToggleBtnEl = tb.addBtn(
+        BTN_ID_TOGGLE_BORDER, 'Toggle Border', Icons.createBorderToggleIcon(false),
         () => {
-            const isVisible = toggleBoundingBox(scene);
-            if (borderToggleButton && borderToggleButton.innerHTML) {
-                borderToggleButton.innerHTML = '';
-                borderToggleButton.appendChild(Icons.createBorderToggleIcon(isVisible));
+            const isVisible = toggleBBox(scene);
+            if (borderToggleBtnEl) {
+                borderToggleBtnEl.innerHTML = Icons.createBorderToggleIcon(isVisible);
             }
-        },
-        {},
-        'Border'
+        }, {}, sectLbl
     );
 
-    toolbar.addButton('Change Border Color', Icons.colorPickerIcon, (e) => {
-        const button = e.currentTarget || e.target;
-        togglePopup(button, () => {
-            return createColorPickerPopup(
-                toolbar.toolbarElement,
-                borderColors,
-                (color) => changeBoundingBoxColor(scene, modelMesh, color)
-            );
-        });
+    tb.addBtn(BTN_ID_BORDER_COLOR, 'Change Border Color', Icons.colorPickerIcon, (e) => {
+        const btn = e.currentTarget || e.target;
+        togglePopup(btn, () => ({ 
+            colors: borderColors, 
+            onSelect: (colorValue) => setBBoxClr(scene, modelMesh, colorValue)
+        }));
         e.stopPropagation();
-    }, {}, 'Border');
-
-    toolbar.addSeparator('Border');
+    }, {}, sectLbl);
 }
 
-function addBackgroundButtons(toolbar, environment) {
-    const { renderer } = environment;
+function addBackgroundBtns(tb, env) {
+    const { renderer: rend } = env;
+    const sectLbl = 'Background';
 
-    toolbar.addButton('Change Background', Icons.colorPickerIcon, (e) => {
-        const button = e.currentTarget || e.target;
-        togglePopup(button, () => {
-            return createColorPickerPopup(
-                toolbar.toolbarElement,
-                backgroundColors,
-                (color) => renderer.setClearColor(color)
-            );
-        });
+    tb.addBtn(BTN_ID_BG_COLOR, 'Change Background', Icons.colorPickerIcon, (e) => {
+        const btn = e.currentTarget || e.target;
+        togglePopup(btn, () => ({
+            colors: backgroundColors,
+            onSelect: (colorValue) => rend.setClearColor(colorValue)
+        }));
         e.stopPropagation();
-    }, {}, 'Background');
-
-    toolbar.addSeparator('Background');
+    }, {}, sectLbl);
 }
 
-function addResizeButtons(toolbar) {
-    toolbar.addButton('Resize', Icons.resetSizeIcon, () => {
-        toggleResizeMode();
-    }, {}, 'Resize');
+function addResizeBtns(tb) {
+    const sectLbl = 'Resize';
+    tb.addBtn(BTN_ID_RESIZE_MODE, 'Resize', Icons.resetSizeIcon, toggleResize, {}, sectLbl);
 }

@@ -1,60 +1,39 @@
-﻿import { initThreeEnvironment, startAnimationLoop, cleanupThreeEnvironment } from './core/three-environment.js';
-import { loadModel } from './core/model-handler.js';
-import { initResizeHandler, cleanupResizeHandler } from './features/resize-handler.js';
-import { resetBoundingBox } from './features/bounding-box.js';
+﻿import { faceQuaternions, MODEL_PATH } from './utils//constants.js';
+import { initThreeEnvironment, startAnimationLoop, cleanupThreeEnvironment } from './core/three-environment.js';
+import { loadMdl } from './core/model-handler.js';
+import { initResize, cleanupResize } from './features/resize-handler.js';
+import { resetBBox } from './features/bounding-box.js';
 import { initToolbar } from './toolbar/toolbar-builder.js';
 import { cleanupPopups } from './toolbar/popups.js';
-import { createFaceQuaternions } from './utils/constants.js';
 
-let environment = null;
-let stopAnimation = null;
-let toolbar = null;
+let env, stopAnimLoop, toolbar;
 
-function initializeThreeSTLViewer() {
-    const container = document.getElementById('three-container');
-    if (!container) {
-        console.error('three-container div not found');
-        return;
-    }
+function initSTLViewer() {
+    const cont = document.getElementById('three-container');
+  
+    env = initThreeEnvironment(cont);
+    initResize(cont, env.renderer, env.camera);
 
-    container.classList.add('three-container');
-
-    environment = initThreeEnvironment(container);
-    if (!environment) {
-        console.error('environemnt setup failure');
-        return;
-    }
-
-    initResizeHandler(container, environment.renderer, environment.camera);
-
-    const THREE = window.ThreeModule.THREE;
-    const faceQuaternions = createFaceQuaternions(THREE);
-
-    loadModel('/js/three-stl-viewer/assets/test.stl', environment, () => {
-        toolbar = initToolbar(container, environment, faceQuaternions);
-        stopAnimation = startAnimationLoop(environment);
+  
+    loadMdl(MODEL_PATH, env, () => {
+        toolbar = initToolbar(cont, env, faceQuaternions);
+        stopAnimLoop = startAnimationLoop(env);
     });
 }
 
-function cleanupThreeScene() {
-    if (stopAnimation) {
-        stopAnimation();
-    }
-
-    if (toolbar) {
-        toolbar.dispose();
-        toolbar = null;
-    }
+function cleanupSTLViewer() {
+    stopAnimLoop?.();
+    toolbar?.dispose();
 
     cleanupPopups();
-    cleanupResizeHandler();
-    resetBoundingBox();
-    cleanupThreeEnvironment(environment);
+    cleanupResize();
+    resetBBox();
+    if (env) { 
+        cleanupThreeEnvironment(env);
+    }
 
-    environment = null;
-    stopAnimation = null;
+    env = stopAnimLoop = toolbar = null;
 }
 
-// Export functions for Blazor interop
-window.initializeThreeSTLViewer = initializeThreeSTLViewer;
-window.cleanupThreeScene = cleanupThreeScene;
+window.initSTLViewer = initSTLViewer;
+window.cleanupSTLViewer = cleanupSTLViewer;

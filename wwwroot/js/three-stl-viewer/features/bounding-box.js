@@ -1,61 +1,45 @@
-﻿let boxHelper = null;
-let borderVisible = false;
-let currentBorderColor = 0x0088ff;
-let modelBox = null;
+﻿import { THREE, DEFAULT_BB_COLOR } from '../utils/constants.js'; 
 
-export function createBoundingBox(scene, mesh, color = 0x0088ff) {
-    const THREE = window.ThreeModule.THREE;
-    if (!THREE) return null;
-
-    if (boxHelper) scene.remove(boxHelper);
-
-    modelBox = new THREE.Box3().setFromObject(mesh);
-    boxHelper = new THREE.Box3Helper(modelBox, color);
-    boxHelper.visible = borderVisible;
-    scene.add(boxHelper);
-
-    currentBorderColor = color;
-    return boxHelper;
+let bHlp = null; 
+let isVis = false; 
+let curClr = DEFAULT_BB_COLOR; 
+let mBox = null; 
+function _addBox(scn, msh, clr) {
+    if (bHlp) scn.remove(bHlp);
+    mBox = new THREE.Box3().setFromObject(msh);
+    bHlp = new THREE.Box3Helper(mBox, clr);
+    bHlp.visible = isVis; 
+    scn.add(bHlp);
+    curClr = clr;
 }
+export function initBBox(scn, msh, clr = curClr) { 
+    if (!msh || !scn) return null; 
 
-export function toggleBoundingBox() {
-    if (!boxHelper) return false;
-
-    borderVisible = !borderVisible;
-    boxHelper.visible = borderVisible;
-
-    return borderVisible;
+    _addBox(scn, msh, clr);
+    return bHlp;
 }
+export function toggleBBox(scn, msh) { 
+    if (!bHlp && msh && scn) _addBox(scn, msh, curClr); 
+    if (!bHlp) return isVis; 
 
-export function changeBoundingBoxColor(scene, mesh, color) {
-    if (!mesh) return;
-
-    currentBorderColor = color;
-
-    if (boxHelper) scene.remove(boxHelper);
-    createBoundingBox(scene, mesh, color);
-    boxHelper.visible = borderVisible;
+    isVis = !isVis;
+    bHlp.visible = isVis;
+    return isVis;
 }
+export function setBBoxClr(scn, msh, clr) {
+    if (!msh || !scn) return; 
 
-export function getBoundingBoxSize() {
-    if (!modelBox) return null;
-
-    const THREE = window.ThreeModule.THREE;
-    if (!THREE) return null;
-
-    const size = new THREE.Vector3();
-    return modelBox.getSize(size);
+    _addBox(scn, msh, clr);
 }
-export function getBoundingBoxState() {
-    return {
-        visible: borderVisible,
-        color: currentBorderColor,
-        box: modelBox
-    };
-}
+export function getBBoxSize() {
 
-export function resetBoundingBox() {
-    boxHelper = null;
-    borderVisible = false;
-    modelBox = null;
+    return mBox?.getSize(new THREE.Vector3());
+}
+export function getBBoxState() {
+    return { vis: isVis, clr: curClr, box: mBox };
+}
+export function resetBBox(scn) {
+    if (bHlp && scn) scn.remove(bHlp); 
+    bHlp = mBox = null;
+    isVis = false;
 }

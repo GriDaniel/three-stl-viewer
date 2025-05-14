@@ -1,71 +1,90 @@
-﻿let isResizeMode = false;
-let isResizing = false;
+﻿import { RESIZE_HANDLE_ID } from '../utils/constants.js';
+
+let isActive = false;
+let isDragging = false;
 let startY = 0;
 let startHeight = 0;
-let resizeHandle = null;
+let handleEl = null;
 
-export function initResizeHandler(container, renderer, camera) {
-    resizeHandle = document.createElement('div');
-    resizeHandle.classList.add('resize-handle');
-    resizeHandle.style.display = 'none';
-    container.appendChild(resizeHandle);
+let dragCtx = { cont: null, rend: null, cam: null };
+let currentMouseMoveHandler = null;
+let currentMouseUpHandler = null;
 
-    resizeHandle.addEventListener('mousedown', e => startResize(e, container, renderer, camera));
-    window.addEventListener('resize', () => updateRendererSize(container, renderer, camera));
-
-    return { updateRendererSize: () => updateRendererSize(container, renderer, camera) };
-}
-
-export function toggleResizeMode() {
-    isResizeMode = !isResizeMode;
-    if (resizeHandle) {
-        resizeHandle.style.display = isResizeMode ? 'block' : 'none';
-    }
-    return isResizeMode;
-}
-
-function startResize(e, container, renderer, camera) {
-    if (!isResizeMode) return;
-
-    isResizing = true;
+function onMouseDown(e, cont, rend, cam) {
+    if (!isActive) return;
+    isDragging = true;
     startY = e.clientY;
-    startHeight = container.clientHeight;
+    startHeight = cont.clientHeight;
+    dragCtx = { cont, rend, cam }; 
 
-    document.addEventListener('mousemove', e => resize(e, container, renderer, camera));
-    document.addEventListener('mouseup', () => stopResize(renderer, camera));
+    currentMouseMoveHandler = (ev) => onMouseMove(ev); 
+    currentMouseUpHandler = () => onMouseUp();
+
+    document.addEventListener('mousemove', currentMouseMoveHandler);
+    document.addEventListener('mouseup', currentMouseUpHandler);
+    e.preventDefault();
 }
 
-function resize(e, container, renderer, camera) {
-    if (!isResizing) return;
-
-    const newHeight = startHeight + (e.clientY - startY);
-    container.style.height = `${newHeight}px`;
-    updateRendererSize(container, renderer, camera);
+function onMouseMove(e) { 
+    if (!isDragging) return;
+    dragCtx.cont.style.height = `${startHeight + (e.clientY - startY)}px`;
+    updateSize(dragCtx.cont, dragCtx.rend, dragCtx.cam);
 }
 
-function stopResize() {
-    isResizing = false;
-    document.removeEventListener('mousemove', resize);
-    document.removeEventListener('mouseup', stopResize);
+function onMouseUp() { 
+    isDragging = false;
+    document.removeEventListener('mousemove', currentMouseMoveHandler);
+    document.removeEventListener('mouseup', currentMouseUpHandler);
+    currentMouseMoveHandler = null;
+    currentMouseUpHandler = null;
+    dragCtx = { cont: null, rend: null, cam: null };
 }
 
-export function updateRendererSize(container, renderer, camera) {
-    const width = container.clientWidth;
-    const height = container.clientHeight;
+export function updateSize(cont, rend, cam) {
+    if (!cont || !rend || !cam) return; 
+    const w = cont.clientWidth;
+    const h = cont.clientHeight;
+    if (w <= 0 || h <= 0) return;
 
-    if (width <= 0 || height <= 0) return;
-
-    camera.aspect = width / height;
-    camera.updateProjectionMatrix();
-    renderer.setSize(width, height);
+    cam.aspect = w / h;
+    cam.updateProjectionMatrix();
+    rend.setSize(w, h);
 }
 
-export function cleanupResizeHandler() {
-    if (resizeHandle && resizeHandle.parentNode) {
-        resizeHandle.parentNode.removeChild(resizeHandle);
+export function initResize(cont, rend, cam) {
+    handleEl = document.getElementById(RESIZE_HANDLE_ID);
+
+    if (!handleEl) {
+        console.error('Resize handle element not found in DOM.');
+        return { updateSize: () => updateSize(cont, rend, cam) };
     }
 
-    isResizeMode = false;
-    isResizing = false;
-    resizeHandle = null;
+    handleEl.style.display = 'none';
+
+    handleEl.addEventListener('mousedown', (e) => onMouseDown(e, cont, rend, cam));
+    window.addEventListener('resize', () => updateSize(cont, rend, cam));
+
+    return { updateSize: () => updateSize(cont, rend, cam) };
+}
+
+export function toggleResize() {
+    if (!handleEl) return isActive;
+    isActive = !isActive;
+    handleEl.style.display = isActive ? 'block' : 'none';
+    return isActive;
+}
+
+export function cleanupResize() {
+    if (handleEl) {
+        handleEl.style.display = 'none';
+    }
+   
+    if (currentMouseMoveHandler) document.removeEventListener('mousemove', currentMouseMoveHandler);
+    if (currentMouseUpHandler) document.removeEventListener('mouseup', currentMouseUpHandler);
+
+    isActive = isDragging = false;
+    startY = startHeight = 0;
+    currentMouseMoveHandler = null;
+    currentMouseUpHandler = null;
+    dragCtx = { cont: null, rend: null, cam: null };
 }

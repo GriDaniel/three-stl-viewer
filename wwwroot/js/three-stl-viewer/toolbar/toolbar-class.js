@@ -1,138 +1,100 @@
-﻿export class Toolbar {
-    constructor(container, options = {}) {
-        this.container = container;
-        this.options = Object.assign({}, options);
-        this.sections = [];
-        this.toolbarElement = null;
-        this.overlayElement = null;
+﻿import { TB_OVERLAY_ID, TB_MAIN_ID } from '../utils/constants.js';
 
-        setTimeout(() => this._createToolbar(), 100);
+export class Toolbar {
+    constructor(cont, opts = {}) {
+        this.cont = cont;
+        this.opts = { ...opts };
+        this.sects = [];
+        this.globBtns = [];
+
+        this.overlayEl = document.getElementById(TB_OVERLAY_ID);
+        this.barEl = document.getElementById(TB_MAIN_ID);
+
+        if (!this.overlayEl || !this.barEl) {
+            console.error('Toolbar DOM elements (overlay or main) not found.');
+        }
     }
 
-    _createToolbar() {
-        const canvas = this.container.querySelector('canvas');
-        if (!canvas) {
-            console.error('Canvas element not found in container');
-            return;
-        }
+    getSect(lbl) {
+        if (!this.barEl || !lbl) return null;
 
-        this.overlayElement = document.createElement('div');
-        this.overlayElement.classList.add('toolbar-container');
+        let sect = this.sects.find(s => s.lbl === lbl);
+        if (sect) return sect;
 
-        this.toolbarElement = document.createElement('div');
-        this.toolbarElement.classList.add('toolbar-main');
+        const sectEl = this.barEl.querySelector(`.toolbar-section[data-section-label="${lbl}"]`);
+        if (!sectEl) return null;
 
-        this.overlayElement.appendChild(this.toolbarElement);
+        const btnContEl = sectEl.querySelector(`.toolbar-button-container`);
+        if (!btnContEl) return null;
 
-        if (canvas.nextSibling) {
-            this.container.insertBefore(this.overlayElement, canvas.nextSibling);
+        sect = { lbl, btns: [], el: btnContEl };
+        this.sects.push(sect);
+        return sect;
+    }
+
+    addBtn(id, lbl, icon, onClick, styles = {}, sectLbl = null) {
+        if (!this.barEl) return null;
+
+        let targetCont;
+        let sectStore;
+
+        if (sectLbl) {
+            const sect = this.getSect(sectLbl);
+            if (sect) {
+                targetCont = sect.el;
+                sectStore = sect.btns;
+            } else {
+                targetCont = this.barEl;
+                sectStore = this.globBtns;
+            }
         } else {
-            this.container.appendChild(this.overlayElement);
-        }
-    }
-
-    addSection(label) {
-        if (!this.toolbarElement) {
-            setTimeout(() => this.addSection(label), 150);
-            return null;
+            targetCont = this.barEl;
+            sectStore = this.globBtns;
         }
 
-        const sectionContainer = document.createElement('div');
-        sectionContainer.classList.add('toolbar-section');
+        if (!targetCont) return null;
 
-        const header = document.createElement('div');
-        header.classList.add('toolbar-section-header');
-        header.textContent = label;
+        const btn = targetCont.querySelector(`.toolbar-button[data-button-id="${id}"]`);
+        if (!btn) return null;
 
-        const buttonContainer = document.createElement('div');
-        buttonContainer.classList.add('toolbar-button-container');
-
-        sectionContainer.appendChild(header);
-        sectionContainer.appendChild(buttonContainer);
-        this.toolbarElement.appendChild(sectionContainer);
-
-        const section = {
-            label,
-            buttons: [],
-            element: buttonContainer
-        };
-        this.sections.push(section);
-
-        return section;
-    }
-
-    addButton(label, icon, onClick, customStyles = {}, sectionLabel = null) {
-        if (!this.toolbarElement) {
-            setTimeout(() => this.addButton(label, icon, onClick, customStyles, sectionLabel), 150);
-            return null;
-        }
-
-        let section = this.sections.find(s => s.label === sectionLabel);
-        if (!section && sectionLabel) {
-            section = this.addSection(sectionLabel);
-        }
-
-        const button = document.createElement('button');
-        button.classList.add('toolbar-button');
-
-        Object.assign(button.style, customStyles);
+        Object.assign(btn.style, styles);
 
         if (icon) {
-            if (typeof icon === 'string') {
-                button.innerHTML = icon;
-            } else {
-                button.appendChild(icon.cloneNode(true));
-            }
-            button.title = label;
-        } else {
-            button.textContent = label;
+            btn.innerHTML = icon;
+            if (lbl) btn.title = lbl;
+        } else if (lbl) {
+            btn.textContent = lbl;
+            btn.title = lbl;
         }
 
-        button.addEventListener('click', onClick);
-
-        const targetContainer = section ? section.element : this.toolbarElement;
-        targetContainer.appendChild(button);
-
-        if (section) {
-            section.buttons.push(button);
-        } else {
-            this.sections.push({ label: null, buttons: [button], element: this.toolbarElement });
-        }
-
-        return button;
+        btn.addEventListener('click', onClick);
+        sectStore.push({ el: btn, handler: onClick });
+        return btn;
     }
 
-    addSeparator(sectionLabel = null) {
-        if (!this.toolbarElement) {
-            setTimeout(() => this.addSeparator(sectionLabel), 150);
-            return;
+    addSep(id, sectLbl = null) {
+        if (!this.barEl) return;
+
+        let targetCont;
+        if (sectLbl) {
+            const sect = this.getSect(sectLbl);
+            targetCont = sect ? sect.el : this.barEl;
+        } else {
+            targetCont = this.barEl;
         }
 
-        let section = this.sections.find(s => s.label === sectionLabel);
-        if (!section && sectionLabel) {
-            section = this.addSection(sectionLabel);
-        }
-
-        const separator = document.createElement('div');
-        separator.classList.add('toolbar-separator');
-
-        const targetContainer = section ? section.element : this.toolbarElement;
-        targetContainer.appendChild(separator);
+        if (!targetCont) return;
+        const sep = targetCont.querySelector(`.toolbar-separator[data-separator-id="${id}"]`);
     }
 
     dispose() {
-        this.sections.forEach(section => {
-            section.buttons.forEach(button => {
-                button.onclick = null;
-            });
+        this.sects.forEach(sect => {
+            sect.btns.forEach(b => b.el.removeEventListener('click', b.handler));
+            sect.btns = [];
         });
+        this.globBtns.forEach(b => b.el.removeEventListener('click', b.handler));
 
-        if (this.overlayElement && this.overlayElement.parentNode) {
-            this.overlayElement.parentNode.removeChild(this.overlayElement);
-        }
-
-        this.sections = [];
-        this.toolbarElement = null;
-        this.overlayElement = null;
+        this.sects = [];
+        this.globBtns = [];
     }
 }
